@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #050505;
+  --color-yellow-state: #FAA73B;
+  --color-green-state: #42CA5B;
+  --color-teal-state: #41C3D0;
+  --color-red-state: #ED3737;
+  --color-dark: #090B17;
+  --color-dark-2: #0D101C;
+  --color-dark-3: #1C1E2E;
+  --color-gray-4: #5C628C;
+  --color-gray-5: #9096BB;
+  --color-gray-6: #AEB4D7;
+  --color-white: #FAFAFA;
+}
+
+:root {
+  --color-vamp-gradient: linear-gradient(149deg,rgba(230, 255, 228, 1) 0%, rgba(236, 196, 226, 1) 84%);
+  --color-red-fade: linear-gradient(0deg, rgba(224, 62, 23, 0.5) 15%, rgba(224, 62, 23, 0) 63%)
+}
+/* @import url("./react-date-picker.css"); */
+.PhoneInputInput {
+  @apply bg-transparent outline-none;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+
+html {
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+
+.centered {
+  @apply flex items-center justify-center;
+}
+
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+}
