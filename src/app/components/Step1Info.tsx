@@ -1,8 +1,8 @@
-import React from "react";
-import { BRAND_ACCEPTED } from "../utils/dummyData";
-import Image from "next/image";
-import { Button } from "./elements/Button";
 import { ArrowDownRight } from "lucide-react";
+import Image from "next/image";
+import React from "react";
+
+import { BRAND_ACCEPTED } from "../utils/dummyData";
 
 interface Step1InfoProps {
   handleOpenStep2: () => void;
