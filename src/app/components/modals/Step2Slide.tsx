@@ -27,7 +27,7 @@ const Step2Slide = ({ modalOpen, handleOpenStep3 }: Step2SlideProps) => {
       <div className="pt-18 text-black  mb-20 h-full overflow-y-auto pr-8 lg:pr-20 ">
         <p className="text-xs">STEP 2</p>
         <div className="flex flex-col xl:flex-row items-start xl:gap-14">
-          <h2 className="xl:min-w-[363px] uppercase font-[500] leading-[122%] text-[50px] mt-3">
+          <h2 className="xl:min-w-[363px] uppercase font-[500] leading-[122%] text-[45px] sm:text-[50px] mt-3">
             Fill Out the Order Form
           </h2>
           <p>
@@ -36,7 +36,11 @@ const Step2Slide = ({ modalOpen, handleOpenStep3 }: Step2SlideProps) => {
             our 10% service fee.
           </p>
         </div>
-        <Image src={slide2Img} alt="slide-2-img" className="w-full h-auto mt-10" />
+        <Image
+          src={slide2Img}
+          alt="slide-2-img"
+          className="w-full h-auto mt-10"
+        />
         <button
           type="button"
           onClick={handleOpenStep3}

@@ -19,7 +19,7 @@ const Step2Slide = ({ modalOpen, handleOpenStep4 }: Step2SlideProps) => {
     <Modal
       variant="middle"
       className={clsx(
-        "w-full min-h-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
+        "w-full min-h-full select-none bg-[#E6F6E3] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
       )}
       showDialog={modalOpen}
       closeModal={() => {}}
@@ -28,7 +28,7 @@ const Step2Slide = ({ modalOpen, handleOpenStep4 }: Step2SlideProps) => {
       <div className="pt-18 text-black mb-20 pr-8 lg:pr-20">
         <p className="text-xs">STEP 3</p>
         <div className="sm:w-[457px]">
-          <h2 className="uppercase font-[500] leading-[122%] text-[50px] mt-3">
+          <h2 className="uppercase font-[500] leading-[122%] text-[45px] sm:text-[50px] mt-3">
             Receive Your Invoice in Naira
           </h2>
           <p className="mt-6">
@@ -41,16 +41,16 @@ const Step2Slide = ({ modalOpen, handleOpenStep4 }: Step2SlideProps) => {
             into our Nigerian account.
           </p>
         </div>
-        <div className="flex gap-8">
+        <div className="flex gap-8 mt-6 flex-col sm:flex-row sm:pr-8 lg:pr-10">
           <Image
             src={slide3Img1}
             alt="slide-2-img"
-            className="w-full h-auto mt-10"
+            className="sm:w-[50%]"
           />
           <Image
             src={slide3Img2}
             alt="slide-2-img"
-            className="w-full h-auto mt-10"
+            className="sm:w-[50%]"
           />
         </div>
         <button

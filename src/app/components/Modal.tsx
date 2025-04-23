@@ -9,15 +9,13 @@ import ReactDOM from "react-dom";
 import React from "react";
 import clsx from "clsx";
 
-
-
 interface ModalProps {
   showDialog: boolean;
   closeModal: () => void;
   className?: string;
   variant?: "right" | "middle" | "full" | "left";
   children: React.ReactNode;
-  modalRef?: React.RefObject<HTMLDivElement>;
+  modalRef?: React.RefObject<HTMLDivElement | null>;
   backdropVariantsClass?: string;
 }
 

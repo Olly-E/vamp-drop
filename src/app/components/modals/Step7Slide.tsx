@@ -27,7 +27,7 @@ const Step7Slide = ({ modalOpen, handleOpenStep8 }: Step7SlideProps) => {
       <div className="pt-18 text-black mb-20 h-full overflow-y-auto pr-8 lg:pr-20 ">
         <p className="text-xs">STEP 7</p>
         <div className="flex flex-col xl:flex-row items-start xl:gap-14">
-          <h2 className="xl:min-w-[363px] uppercase font-[500] leading-[122%] text-[50px] mt-3">
+          <h2 className="xl:min-w-[363px] uppercase font-[500] leading-[122%] text-[45px] sm:text-[50px] mt-3">
             OUR <br /> SERVICE FEE
           </h2>
           <p>

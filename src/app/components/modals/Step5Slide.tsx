@@ -24,12 +24,12 @@ const Step5Slide = ({ modalOpen, handleOpenStep6 }: Step5SlideProps) => {
       closeModal={() => {}}
       backdropVariantsClass="w-full md:!w-[60%]"
     >
-      <div className="pt-38 text-black mb-20 pr-8 lg:pr-20 gap-10">
+      <div className="pt-20 sm:pt-38 text-black mb-20 pr-8 lg:pr-20 gap-10">
         <div className="flex-col xl:flex-row flex gap-14">
           <div>
             <p className="text-xs">STEP 5</p>
             <div className="">
-              <h2 className="text-left uppercase font-[500] leading-[122%] text-[50px] mt-3">
+              <h2 className="text-left uppercase font-[500] leading-[122%] text-[45px] sm:text-[50px] mt-3">
                 Order Placement & Shipping
               </h2>
               <p className="mt-6">

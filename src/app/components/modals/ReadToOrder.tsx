@@ -19,21 +19,18 @@ const ReadyToOrder = ({ modalOpen }: ReadyToOrderProps) => {
       closeModal={() => {}}
       backdropVariantsClass="w-full md:!w-[60%]"
     >
-      <div className="pt-18 text-black mb-20 h-full overflow-y-auto">
-        <div className="mt-36">
-          <div className="max-w-[442px]">
-            <h2 className="xl:min-w-[363px] uppercase font-[500] leading-[122%] text-[50px] mt-3">
-              READY TO ORDER?
-            </h2>
-            <p className="mt-[30px]">
-              Follow the steps above, or reach out to us if you have questions
-              about the process. Vamp Drop makes it easy to bring your favorite
-              products from abroad straight to you!
-            </p>
-          </div>
-        </div>
+      <div className="max-w-[442px] mt-20">
+        <h2 className="xl:min-w-[363px] uppercase font-[500] leading-[122%] text-[45px] sm:text-[50px] mt-3">
+          READY TO ORDER?
+        </h2>
+        <p className="mt-[30px]">
+          Follow the steps above, or reach out to us if you have questions about
+          the process. Vamp Drop makes it easy to bring your favorite products
+          from abroad straight to you!
+        </p>
       </div>
-      <div className="h-[100px] text-sm flex items-center border-t border-t-black justify-between gap-6 mr-20">
+
+      <div className="h-[100px] w-full text-sm flex items-center border-t border-t-black justify-between gap-6 mr-20">
         <p>© Vamp.com • 2024 All Rights Reserved</p>
       </div>
     </Modal>

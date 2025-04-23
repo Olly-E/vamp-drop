@@ -15,7 +15,7 @@ export const useComponentVisible = (initialIsVisible = false) => {
   };
 
   const handleClickOnDropDownButton = () => {
-    setIsComponentVisible(!isComponentVisible);
+    setIsComponentVisible((prev) => !prev);
   };
 
   const handleCloseDropDown = () => {

@@ -28,7 +28,7 @@ const Step6Slide = ({ modalOpen, handleOpenStep7 }: Step5SlideProps) => {
       <div className="pt-18 text-black mb-20 pr-8 lg:pr-20">
         <p className="text-xs">STEP 6</p>
         <div className="sm:w-[457px]">
-          <h2 className="uppercase font-[500] leading-[122%] text-[50px] mt-3">
+          <h2 className="uppercase font-[500] leading-[122%] text-[45px] sm:text-[50px] mt-3">
             Collect Your Order at Vamp in Lagos
           </h2>
           <p className="mt-6">
