@@ -105,7 +105,7 @@ const VampDropSlides = ({
       showDialog={modalOpen}
       closeModal={handleClose}
     >
-      <FixedButton handleClick={handleCloseAllModal} />
+      {modalOpen && <FixedButton handleClick={handleCloseAllModal} />}
       <div className="md:flex w-full h-full">
         <div className="md:w-[60%] min-h-full h-full relative overflow-y-auto">
           <div className="pl-8 lg:pl-[16.6%] bg-white pt-[45px] pr-8">

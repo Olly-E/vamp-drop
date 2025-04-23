@@ -18,7 +18,9 @@ const Header = ({
   return (
     <div className="sticky top-0 z-[500] h-[45px] border-y border-y-primary w-full flex items-center bg-white">
       <div className=" flex items-center justify-between text-black w-full px-8 lg:px-[10%]">
-        <Image src={logo} alt="logo" className="" />
+        <Link href='/' className="">
+          <Image src={logo} alt="logo" className="" />
+        </Link>
         <div className="flex items-center gap-4">
           <Link href="/" className="">
             <Instagram size={18} color="#050505" />
