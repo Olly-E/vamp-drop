@@ -106,9 +106,9 @@ const VampDropSlides = ({
       closeModal={handleClose}
     >
       <FixedButton handleClick={handleCloseAllModal} />
-      <div className="flex w-full h-full">
-        <div className="w-[60%] min-h-full h-full relative overflow-y-auto">
-          <div className=" pl-[16.6%] bg-white pt-[45px] pr-20">
+      <div className="md:flex w-full h-full">
+        <div className="md:w-[60%] min-h-full h-full relative overflow-y-auto">
+          <div className="pl-8 lg:pl-[16.6%] bg-white pt-[45px] pr-8">
             <Step1Info handleOpenStep2={handleSlide2Visible} />
           </div>
           <Step2Slide
@@ -148,7 +148,7 @@ const VampDropSlides = ({
           />
           <ReadyToOrder modalRef={slide9Ref} modalOpen={slide9Visible} />
         </div>
-        <div className="w-[40%] pr-[calc(10%)] bg-white pt-[45px] relative !z-[100000]">
+        <div className="w-[40%] pr-8 lg:pr-[calc(10%)] bg-white pt-[45px] relative !z-[100000] border border-black overflow-y-auto hidden md:block">
           <ContactUsForm />
         </div>
       </div>

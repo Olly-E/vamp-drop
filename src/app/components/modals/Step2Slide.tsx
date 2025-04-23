@@ -18,15 +18,15 @@ const Step2Slide = ({ modalOpen, handleOpenStep3 }: Step2SlideProps) => {
     <Modal
       variant="middle"
       className={clsx(
-        "w-full select-none bg-[#F9F9E0] !mt-0 pl-[16.6%] py-[45px] min-h-full"
+        "w-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px] min-h-full"
       )}
       showDialog={modalOpen}
       closeModal={() => {}}
-      backdropVariantsClass="!w-[60%]"
+      backdropVariantsClass="w-full md:!w-[60%]"
     >
-      <div className="pt-18 text-black mb-20 h-full overflow-y-auto pr-20 ">
+      <div className="pt-18 text-black  mb-20 h-full overflow-y-auto pr-8 lg:pr-20 ">
         <p className="text-xs">STEP 2</p>
-        <div className="flex flex-col xl:flex-row items-end xl:gap-14">
+        <div className="flex flex-col xl:flex-row items-start xl:gap-14">
           <h2 className="xl:min-w-[363px] uppercase font-[500] leading-[122%] text-[50px] mt-3">
             Fill Out the Order Form
           </h2>

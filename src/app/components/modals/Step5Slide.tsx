@@ -18,23 +18,24 @@ const Step5Slide = ({ modalOpen, handleOpenStep6 }: Step5SlideProps) => {
     <Modal
       variant="middle"
       className={clsx(
-        "w-full min-h-full select-none bg-[#F9F9E0] !mt-0 pl-[16.6%] py-[45px]"
+        "w-full min-h-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
       )}
       showDialog={modalOpen}
       closeModal={() => {}}
-      backdropVariantsClass="!w-[60%]"
+      backdropVariantsClass="w-full md:!w-[60%]"
     >
-      <div className="pt-38 text-black mb-20 pr-20 gap-10">
-        <div className="flex gap-14">
+      <div className="pt-38 text-black mb-20 pr-8 lg:pr-20 gap-10">
+        <div className="flex-col xl:flex-row flex gap-14">
           <div>
             <p className="text-xs">STEP 5</p>
             <div className="">
-              <h2 className="uppercase font-[500] leading-[122%] text-[50px] mt-3">
+              <h2 className="text-left uppercase font-[500] leading-[122%] text-[50px] mt-3">
                 Order Placement & Shipping
               </h2>
               <p className="mt-6">
-                We&apos;ll place the order with the international retailer on your
-                behalf and have it delivered to our secure overseas address.
+                We&apos;ll place the order with the international retailer on
+                your behalf and have it delivered to our secure overseas
+                address.
                 <br />
                 <br />
                 Once your items arrive at our address, they&apos;ll be forwarded

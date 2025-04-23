@@ -26,9 +26,9 @@ const Step1Info = ({ handleOpenStep2 }: Step1InfoProps) => {
   ];
 
   return (
-    <div className="pt-18 text-black mb-20">
+    <div className="pt-18 text-black mb-6">
       <p className="text-xs">STEP 1</p>
-      <h2 className="w-[468px] font-[500] leading-[122%] text-[50px] mt-3">
+      <h2 className="sm:w-[468px] font-[500] leading-[122%] text-[45px] sm:text-[50px] mt-3">
         BROWSE ANY SHOP IN THE UK
       </h2>
       {STEPS.map((step) => (

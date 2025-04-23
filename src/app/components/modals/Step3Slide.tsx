@@ -19,15 +19,15 @@ const Step2Slide = ({ modalOpen, handleOpenStep4 }: Step2SlideProps) => {
     <Modal
       variant="middle"
       className={clsx(
-        "w-full min-h-full select-none bg-[#F9F9E0] !mt-0 pl-[16.6%] py-[45px]"
+        "w-full min-h-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
       )}
       showDialog={modalOpen}
       closeModal={() => {}}
-      backdropVariantsClass="!w-[60%]"
+      backdropVariantsClass="w-full md:!w-[60%]"
     >
-      <div className="pt-18 text-black mb-20 pr-20">
+      <div className="pt-18 text-black mb-20 pr-8 lg:pr-20">
         <p className="text-xs">STEP 3</p>
-        <div className="w-[457px]">
+        <div className="sm:w-[457px]">
           <h2 className="uppercase font-[500] leading-[122%] text-[50px] mt-3">
             Receive Your Invoice in Naira
           </h2>
@@ -35,7 +35,8 @@ const Step2Slide = ({ modalOpen, handleOpenStep4 }: Step2SlideProps) => {
             Once you submit the order form, our team will review the details and
             calculate the total cost, converted into Naira, including our 10%
             Vamp Drop service fee.
-            <br /><br />
+            <br />
+            <br />
             We&apos;ll email you an invoice with instructions to make payment
             into our Nigerian account.
           </p>

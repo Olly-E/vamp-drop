@@ -27,7 +27,7 @@ export const ContactUsForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="text-black pt-[69.5px] h-full text-[16px] sm:text-[20px] pb-10 pl-16 overflow-y-auto"
+      className="text-black pt-[69.5px] text-[16px] sm:text-[20px] pl-8 xl:pl-16 "
     >
       <h3 className="text-base">FILL OUT OUR SIMPLE ORDER FORM</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 text-sm">
@@ -109,7 +109,7 @@ export const ContactUsForm = () => {
       <Button
         isLoading={isPending}
         type="submit"
-        className="mt-3 w-full !text-sm uppercase"
+        className="mt-3 w-full !text-sm uppercase !mb-10"
         disabled={isPending}
       >
         {isPending ? "Submitting..." : "Submit"}

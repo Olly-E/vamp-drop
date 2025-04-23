@@ -19,15 +19,15 @@ const Step6Slide = ({ modalOpen, handleOpenStep7 }: Step5SlideProps) => {
     <Modal
       variant="middle"
       className={clsx(
-        "w-full min-h-full select-none bg-[#F6E3E3] !mt-0 pl-[16.6%] py-[45px]"
+        "w-full min-h-full select-none bg-[#F6E3E3] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
       )}
       showDialog={modalOpen}
       closeModal={() => {}}
-      backdropVariantsClass="!w-[60%]"
+      backdropVariantsClass="w-full md:!w-[60%]"
     >
-      <div className="pt-18 text-black mb-20 pr-20">
+      <div className="pt-18 text-black mb-20 pr-8 lg:pr-20">
         <p className="text-xs">STEP 6</p>
-        <div className="w-[457px]">
+        <div className="sm:w-[457px]">
           <h2 className="uppercase font-[500] leading-[122%] text-[50px] mt-3">
             Collect Your Order at Vamp in Lagos
           </h2>
@@ -50,7 +50,7 @@ const Step6Slide = ({ modalOpen, handleOpenStep7 }: Step5SlideProps) => {
             <Image
               src={slide6Img2}
               alt="slide-2-img"
-              className="w-full max-w-[300px] h-auto"
+              className=" w-[300px] h-auto"
             />
           </a>
         </div>

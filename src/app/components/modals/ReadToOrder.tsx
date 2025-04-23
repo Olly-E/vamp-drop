@@ -13,11 +13,11 @@ const ReadyToOrder = ({ modalOpen }: ReadyToOrderProps) => {
     <Modal
       variant="middle"
       className={clsx(
-        "w-full select-none bg-white !mt-0 pl-[16.6%] py-[45px] min-h-full flex flex-col justify-between"
+        "w-full select-none bg-white !mt-0 pl-8 lg:pl-[16.6%] py-[45px] min-h-full flex flex-col justify-between pr-8"
       )}
       showDialog={modalOpen}
       closeModal={() => {}}
-      backdropVariantsClass="!w-[60%]"
+      backdropVariantsClass="w-full md:!w-[60%]"
     >
       <div className="pt-18 text-black mb-20 h-full overflow-y-auto">
         <div className="mt-36">
