@@ -8,9 +8,15 @@ import { InputFieldPhoneNo } from "@/app/components/form/InputFieldPhoneNo";
 import { TextAreaField } from "@/app/components/form/TextAreaField";
 import { InputField } from "@/app/components/form/InputField";
 import { Button } from "@/app/components/elements/Button";
+import { useContactUs } from "../features/contact/api/useContact";
+import { ContactUsPayload } from "../features/contact/types";
+import { blobToBase64 } from "../utils/utils";
 
 export const ContactUsForm = () => {
+  const { mutate, isPending } = useContactUs();
   const {
+    reset,
+    watch,
     control,
     register,
     handleSubmit,
@@ -19,10 +25,26 @@ export const ContactUsForm = () => {
     resolver: zodResolver(contactUsSchema),
   });
 
-  const onSubmit = (values: ContactUsInputType) => {
-    console.log(values);
+  const onSubmit = async (values: ContactUsInputType) => {
+    const file = values.screenshot?.[0];
+    let base64: string | null = null;
+    if (file) {
+      base64 = await blobToBase64(file);
+    }
+
+    const payload: ContactUsPayload = {
+      first_name: values.firstName,
+      last_name: values.lastName,
+      email: values.email,
+      phone_number: values.phone || "",
+      screenshot_base64: base64 || "",
+    };
+    mutate(payload, {
+      onSuccess: () => {
+        reset();
+      },
+    });
   };
-  const isPending = false;
 
   return (
     <form
@@ -78,12 +100,28 @@ export const ContactUsForm = () => {
           />
         </div>
         <div className="col-span-2 mt-5">
-          <label htmlFor="message" className="text-[#817D7C]">
+          <label htmlFor="screenshot" className="text-[#817D7C]">
             Attach a screenshot of your shopping cart
           </label>
-          <div className="text-xs h-[40px] mt-3 text-center rounded-[3px] items-center justify-center flex border border-black ">
-            CHOOSE FILE (.pdf, .png, .jpg)
+
+          <div className="relative mt-3">
+            <input
+              type="file"
+              id="screenshot"
+              accept=".pdf,.png,.jpg,.jpeg,.webp"
+              {...register("screenshot")}
+              className="absolute inset-0 opacity-0 z-10 cursor-pointer"
+            />
+
+            <div className="text-xs h-[40px] px-4 text-center rounded-[3px] flex items-center justify-center border border-black bg-white cursor-pointer">
+              CHOOSE FILE (.pdf, .png, .jpg)
+            </div>
           </div>
+          {watch("screenshot")?.[0] && (
+            <p className="text-sm mt-2 text-gray-600">
+              Selected: {watch("screenshot")[0].name}
+            </p>
+          )}
         </div>
         <div className="mt-4 col-span-2">
           <label htmlFor="message" className="text-[#817D7C]">

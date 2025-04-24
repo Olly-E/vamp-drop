@@ -149,3 +149,21 @@ export function getWeekDays(startDate: string, endDate: string) {
   return result;
 }
 
+
+export const blobToBase64 = (blob: Blob): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onloadend = () => {
+      if (reader.result && typeof reader.result === "string") {
+        resolve(reader.result); // includes the data:... prefix
+      } else {
+        reject("Failed to convert blob to base64");
+      }
+    };
+
+    reader.onerror = reject;
+
+    reader.readAsDataURL(blob);
+  });
+};
