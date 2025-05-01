@@ -9,7 +9,7 @@ const Step6Section = () => {
   return (
     <div
       className={clsx(
-        "w-full min-h-full select-none bg-[#F6E3E3] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
+        "w-full h-full overflow-hidden select-none bg-[#F6E3E3] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
       )}
     >
       <div className="pt-10 text-black pr-8 lg:pr-20">
@@ -28,7 +28,7 @@ const Step6Section = () => {
             <Image
               src={slide6Img1}
               alt="slide-2-img"
-              className=" lg:h-auto object-cover max-h-[197px]"
+              className=" lg:h-auto object-cover max-w-[347px]"
             />
           </div>
           <a

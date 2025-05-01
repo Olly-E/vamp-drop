@@ -8,7 +8,7 @@ const Step5Section = () => {
   return (
     <div
       className={clsx(
-        "w-full min-h-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
+        "w-full h-full overflow-hidden select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px]"
       )}
     >
       <div className="pt-10 text-black pb-10 pr-8 lg:pr-20 gap-10">

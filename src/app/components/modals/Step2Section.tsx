@@ -14,7 +14,7 @@ const Step2Section = () => {
     >
       <div className="pt-10 text-black  mb-20 h-full overflow-y-auto pr-8 lg:pr-20 ">
         <p className="text-xs">STEP 2</p>
-        <div className="flex flex-col xl:flex-row items-start xl:gap-14">
+        <div className="flex flex-col xl:flex-row items-start xl:gap-10">
           <h2 className="uppercase flex-1 font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
             Fill Out the Order Form
           </h2>
@@ -27,7 +27,7 @@ const Step2Section = () => {
         <Image
           src={slide2Img}
           alt="slide-2-img"
-          className="sm:w-[50%] h-auto mt-10 max-h-[200px] lg:w-full object-cover"
+          className=" h-auto mt-10 lg:w-full object-cover"
         />
       </div>
     </div>

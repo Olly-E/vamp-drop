@@ -42,7 +42,7 @@ const Step1Info = ( ) => {
               src={brand}
               key={index}
               alt="brand-accepted-logo"
-              className="h-[25px] sm:h-[40px] w-auto 2xl:w-auto 2xl:h-[auto]"
+              className="h-[40px] sm:h-[40px] w-auto 2xl:w-auto 2xl:h-[auto]"
             />
           );
         })}
