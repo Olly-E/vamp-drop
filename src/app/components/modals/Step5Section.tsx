@@ -19,7 +19,7 @@ const Step5Section = () => {
               <h2 className="text-left uppercase font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
                 Order Placement & Shipping
               </h2>
-              <p className="mt-6 text-base sm:text-sm">
+              <p className="mtt-2 md:mt-6 text-base sm:text-sm">
                 We&apos;ll place the order with the international retailer on
                 your behalf and have it delivered to our secure overseas
                 address.
@@ -34,7 +34,7 @@ const Step5Section = () => {
             <Image
               src={slide5Img}
               alt="slide-2-img"
-              className="max-w-[274px] max-h-[150px] xl:max-h-max xl:w-[274px] object-cover"
+              className="max-w-[274px] max-h-[45%] xl:max-h-max xl:w-[274px] object-cover"
             />
           </div>
         </div>

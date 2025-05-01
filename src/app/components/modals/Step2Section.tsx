@@ -5,8 +5,7 @@ import Image from "next/image";
 
 import slide2Img from "../../../../public/assets/slide2Img.webp";
 
-
-const Step2Section = ( ) => {
+const Step2Section = () => {
   return (
     <div
       className={clsx(
@@ -30,16 +29,6 @@ const Step2Section = ( ) => {
           alt="slide-2-img"
           className="sm:w-[50%] h-auto mt-10 max-h-[200px] lg:w-full object-cover"
         />
-        {/* <button
-          type="button"
-          onClick={handleOpenStep3}
-          className="mt-8 text-xs uppercase font-[500] h-[40px] pr-1 pl-2 border border-black rounded-[3px] w-full flex items-center justify-between"
-        >
-          STEP 3
-          <div className="w-[28px] min-w-[28px] aspect-square centered rounded-[3px] bg-black">
-            <ArrowDownRight size={20} color="#FFFFFF" />
-          </div>
-        </button> */}
       </div>
     </div>
   );

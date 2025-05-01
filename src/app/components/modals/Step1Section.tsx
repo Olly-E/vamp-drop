@@ -44,11 +44,14 @@ const Step1Section = () => {
           <div className="h-screen snap-start">
             <ReadyToOrderSection />
           </div>
-        </div>
-        <div className="h-screen snap-start black sm:hidden overflow-y-auto z-10 relative">
-          <div className="w-full select-none bg-white !mt-0 pl-8 lg:pl-[16.6%] min-h-full flex flex-col justify-between pr-8 text-black">
-            <ContactUsForm />
+          <div className="h-screen snap-start block md:hidden overflow-y-auto z-10 relative">
+            <div className="w-full select-none bg-white !mt-0 pl-8 lg:pl-[16.6%] min-h-full flex flex-col justify-between pr-8 text-black">
+              <ContactUsForm />
+            </div>
           </div>
+        </div>
+        <div className="w-[40%] pr-8 lg:pr-[calc(10%)] bg-white pt-[45px] relative border border-black overflow-y-auto hidden md:block">
+          <ContactUsForm />
         </div>
       </div>
     </div>

@@ -23,12 +23,12 @@ const Step6Section = () => {
             from us. Come to Vamp and pick up your order at your convenience.
           </p>
         </div>
-        <div className="flex gap-4 sm:gap-8 mt-6">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-6">
           <div className="relative w-auto">
             <Image
               src={slide6Img1}
               alt="slide-2-img"
-              className=" lg:h-auto object-cover"
+              className=" lg:h-auto object-cover max-h-[197px]"
             />
           </div>
           <a
@@ -39,7 +39,7 @@ const Step6Section = () => {
             <Image
               src={slide6Img2}
               alt="slide-2-img"
-              className=" h-auto object-cover object-bottom"
+              className=" h-auto object-cover object-bottom max-h-[197px]"
             />
           </a>
         </div>

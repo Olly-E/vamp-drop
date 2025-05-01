@@ -14,7 +14,7 @@ const Step3Section = () => {
     >
       <div className="pt-10 text-black mb-10 pr-8 lg:pr-20">
         <p className="text-xs">STEP 3</p>
-        <div className="sm:w-[457px]">
+        <div className="xl:w-[457px]">
           <h2 className="uppercase font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
             Receive Your Invoice in Naira
           </h2>
@@ -28,19 +28,19 @@ const Step3Section = () => {
             into our Nigerian account.
           </p>
         </div>
-        <div className="flex gap-8 mt-6 sm:pr-8 lg:pr-10">
+        <div className="flex flex-col sm:flex-row gap-8 mt-6 sm:pr-8 lg:pr-10">
           <div className="relative">
             <Image
               src={slide3Img1}
               alt="slide-2-img"
-              className="w-full h-auto max-h-[146px] object-cover"
+              className="w-auto h-auto max-h-[183px] object-cover"
             />
           </div>
           <div className="relative">
             <Image
               src={slide3Img2}
               alt="slide-2-img"
-              className="w-full h-auto max-h-[146px] object-cover"
+              className="w-auto h-auto max-h-[183px] object-cover"
             />
           </div>
         </div>
