@@ -22,7 +22,7 @@ export default function Home() {
             <p className="bg-black/5 text-black px-3 rounded py-1 text-[13px] w-fit font-medium">
               ORDER WITH EASE — WELCOME TO VAMP DROP
             </p>
-            <h1 className="text-[50px] text-black leading-[107%] mt-5">
+            <h1 className="text-[35px] sm:text-[50px] text-black leading-[107%] mt-5">
               ORDER ABROAD PICKUP AT VAMP
             </h1>
             <p className="text-[20px] sm:text-[24px] text-primary font-[500] mt-6 lg:w-[500px] xl:w-[527px]">
