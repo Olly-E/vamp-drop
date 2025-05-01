@@ -1,9 +1,10 @@
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import clsx from "clsx";
 
 import slide6Img1 from "../../../../public/assets/slide6Img1.webp";
-import slide6Img2 from "../../../../public/assets/slide6Img2.webp";
-import clsx from "clsx";
+import location from "../../../../public/assets/location.svg";
 
 const Step6Section = () => {
   return (
@@ -23,24 +24,30 @@ const Step6Section = () => {
             from us. Come to Vamp and pick up your order at your convenience.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-6">
+        <div className=" mt-6">
           <div className="relative w-auto">
             <Image
               src={slide6Img1}
               alt="slide-2-img"
-              className=" lg:h-auto object-cover max-w-[347px]"
+              className=" h-auto w-full sm:max-w-[476px]"
             />
           </div>
           <a
             target="_blank"
             href="https://www.google.com/maps/place/Vamp/@6.4478113,3.4675068,17z/data=!4m7!3m6!1s0x103bf5467664fe95:0x6671f321a6a245bc!4b1!8m2!3d6.4478113!4d3.4700817!16s%2Fg%2F11v459v7tq?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
-            className=""
+            className="w-full border border-black h-[40px] px-[7px] rounded-[3px] flex items-center justify-between mt-[29px]"
           >
-            <Image
-              src={slide6Img2}
-              alt="slide-2-img"
-              className=" h-auto object-cover object-bottom max-h-[197px]"
-            />
+            <div className="flex items-center gap-[10px]">
+              <Image
+                src={location}
+                alt="slide-2-img"
+                className=" w-[27px] min-w-[27px] aspect-square"
+              />
+              <p className="text-xs">VIEW ON THE MAP</p>
+            </div>
+            <div className="w-7 min-w-7 aspect-square rounded-[3px] centered bg-black">
+              <ArrowUpRight size={20} color="#FFFFFF" />
+            </div>
           </a>
         </div>
       </div>
