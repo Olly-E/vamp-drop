@@ -13,6 +13,7 @@
   --color-gray-5: #9096BB;
   --color-gray-6: #AEB4D7;
   --color-white: #FAFAFA;
+  --breakpoint-3xl: 1920px;
 }
 
 :root {

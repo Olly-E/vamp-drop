@@ -3,8 +3,7 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import clsx from "clsx";
 
-import { useComponentVisible } from "../hooks/useComponentVisible";
-import VampDropSlides from "../components/modals/VampDropSides";
+import Step1Section from "../components/modals/Step1Section";
 import { Button } from "../components/elements/Button";
 import { PERKS_DATA } from "../utils/dummyData";
 
@@ -12,20 +11,12 @@ import hero2mg from "../../../public/assets/hero2Img.webp";
 import naija from "../../../public/assets/naija.svg";
 
 export default function Home() {
-  const {
-    handleCloseDropDown,
-    ref: vampDropSlideRef,
-    isComponentVisible: vampDropSlideVisible,
-    setIsComponentVisible: setVampDropSlideVisible,
-    handleClickOnDropDownButton: handleOpenVampDropSlide,
-  } = useComponentVisible();
-
   return (
-    <section
-      className="lg:h-[calc(100%-45px)] text-white w-full relative"
+    <div
+      className="h-screen text-white w-full relative overflow-y-scroll snap-y snap-mandatory"
       style={{ backgroundImage: "var(--color-vamp-gradient)" }}
     >
-      <div className="max-w-[1141px] mx-auto pt-16 pb-10">
+      <section className="max-w-[1141px] mx-auto pt-[109px] pb-10 h-screen snap-start">
         <div className="flex flex-col px-4 xs:px-[30px] xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">
           <div className="lg:w-[527px]">
             <p className="bg-black/5 text-black px-3 rounded py-1 text-[13px] w-fit font-medium">
@@ -41,10 +32,7 @@ export default function Home() {
               Vamp Drop is a service that let’s us handle your international
               orders and deliver your items to your doorstep.
             </p>
-            <Button
-              onClick={handleOpenVampDropSlide}
-              className="flex items-center !justify-between w-full mt-6"
-            >
+            <Button className="flex items-center !justify-between w-full mt-6">
               Explore Vamp Drop
               <ChevronDown
                 color="#FFFFFF"
@@ -79,13 +67,8 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </div>
-      <VampDropSlides
-        handleClose={handleCloseDropDown}
-        modalRef={vampDropSlideRef}
-        modalOpen={vampDropSlideVisible}
-        setModalOpen={setVampDropSlideVisible}
-      />
-    </section>
+      </section>
+      <Step1Section />
+    </div>
   );
 }

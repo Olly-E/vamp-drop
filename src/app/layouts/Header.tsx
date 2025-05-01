@@ -16,7 +16,7 @@ const Header = ({
   dropDownButtonRef,
 }: HeaderProps) => {
   return (
-    <div className="sticky top-0 z-[500] h-[45px] border-y border-y-primary w-full flex items-center bg-white">
+    <div className="fixed top-0 z-[500] h-[45px] border-y border-y-primary w-full flex items-center bg-white">
       <div className=" flex items-center justify-between text-black w-full px-8 lg:px-[10%]">
         <Link href='/' className="">
           <Image src={logo} alt="logo" className="" />
