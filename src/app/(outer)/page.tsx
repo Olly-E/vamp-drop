@@ -11,6 +11,7 @@ import hero2mg from "../../../public/assets/hero2Img.webp";
 import naija from "../../../public/assets/naija.svg";
 import { useComponentVisible } from "../hooks/useComponentVisible";
 import MobileContactSection from "../components/MobileContactSection";
+import { ChevronDown } from "lucide-react";
 
 export default function Home() {
   const { handleClickOnDropDownButton, isComponentVisible, ref } =
@@ -18,8 +19,8 @@ export default function Home() {
   const section1Ref = React.useRef<HTMLDivElement | null>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
-      ref.current?.scrollIntoView({ behavior: "smooth" });
-    };
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div
@@ -45,14 +46,15 @@ export default function Home() {
             <div className="flex items-center max-w-[406px] gap-[20px]">
               <Button
                 onClick={() => scrollToSection(section1Ref)}
-                className="flex items-center w-full mt-6"
+                className="flex items-center w-full mt-6 lg:justify-between"
               >
                 Explore Vamp Drop
+                <ChevronDown size={14} strokeWidth={2} color="#FFFFFF" className="hidden lg:block"/>
               </Button>
               <Button
                 onClick={handleClickOnDropDownButton}
                 variant="outline"
-                className="flex items-center w-full mt-6"
+                className="flex lg:hidden items-center w-full mt-6 "
               >
                 Fill Our Form
               </Button>
