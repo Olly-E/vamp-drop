@@ -12,13 +12,16 @@ import Step6Section from "./Step6Section";
 import Step7Section from "./Step7Section";
 import ReadyToOrderSection from "./ReadToOrderSection";
 
-const Step1Section = () => {
+interface Step1SectionProp {
+  section1Ref: React.RefObject<HTMLDivElement | null>;
+}
+const Step1Section = ({ section1Ref }: Step1SectionProp) => {
   return (
     <div className={clsx("w-screen h-screen snap-start bg-white !mt-0")}>
       <div className="md:flex w-full h-full ">
         <div className="md:w-[60%] min-h-full h-screen relative overflow-y-scroll snap-y snap-mandatory">
           <div className="pl-8 h-screen lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
-            <Step1Info />
+            <Step1Info section1Ref={section1Ref} />
           </div>
           <div className="h-screen snap-start">
             <Step2Section />

@@ -3,7 +3,10 @@ import React from "react";
 
 import { BRAND_ACCEPTED } from "../utils/dummyData";
 
-const Step1Info = ( ) => {
+interface Step1InfoProps {
+  section1Ref: React.RefObject<HTMLDivElement | null>;
+}
+const Step1Info = ({ section1Ref }: Step1InfoProps) => {
   const STEPS = [
     {
       id: "1",
@@ -22,7 +25,7 @@ const Step1Info = ( ) => {
   ];
 
   return (
-    <div className="pt-10 text-black mb-6">
+    <div className="pt-10 text-black mb-6" ref={section1Ref}>
       <p className="text-xs">STEP 1</p>
       <h2 className="sm:w-[468px] font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
         BROWSE ANY SHOP IN THE UK

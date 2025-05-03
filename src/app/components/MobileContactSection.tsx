@@ -19,10 +19,10 @@ const MobileContactSection = ({
       closeModal={() => {}}
       variant="right"
       className={clsx(
-        "w-full select-none bg-[#FFFFFF] !mt-0 px-8 py-[45px] min-h-full"
+        "w-full select-none bg-[#FFFFFF] !mt-0 px-8 py-[40px] min-h-full block lg:hidden"
       )}
       showDialog={modalOpen}
-      backdropVariantsClass="w-full"
+      backdropVariantsClass="w-full block lg:hidden"
     >
       <div className=" text-black mb-20 h-full overflow-y-auto">
         <ContactUsForm />
