@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import React from "react";
 import clsx from "clsx";
 
 import Step1Section from "../components/modals/Step1Section";
@@ -9,9 +10,9 @@ import { PERKS_DATA } from "../utils/dummyData";
 
 import hero2mg from "../../../public/assets/hero2Img.webp";
 import naija from "../../../public/assets/naija.svg";
+
 import { useComponentVisible } from "../hooks/useComponentVisible";
 import MobileContactSection from "../components/MobileContactSection";
-import { ChevronDown } from "lucide-react";
 
 export default function Home() {
   const { handleClickOnDropDownButton, isComponentVisible, ref } =
