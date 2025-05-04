@@ -49,7 +49,7 @@ export const ContactUsForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="text-black pt-[45px] text-[16px] sm:text-[20px] md:pl-8 xl:pl-16 "
+      className="text-black pt-[65px] text-[16px] sm:text-[20px] md:pl-8 xl:pl-16 overflow-y-auto"
     >
       <div>
         <h3 className="text-base">FILL OUT OUR SIMPLE ORDER FORM</h3>

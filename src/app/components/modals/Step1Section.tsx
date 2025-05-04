@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import clsx from "clsx";
 
@@ -15,11 +16,16 @@ import ReadyToOrderSection from "./ReadToOrderSection";
 interface Step1SectionProp {
   section1Ref: React.RefObject<HTMLDivElement | null>;
 }
+
 const Step1Section = ({ section1Ref }: Step1SectionProp) => {
   return (
-    <div className={clsx("w-screen h-screen snap-start bg-white !mt-0")}>
-      <div className="md:flex w-full h-full ">
-        <div className="md:w-[60%] min-h-full h-screen relative overflow-y-scroll snap-y snap-mandatory">
+    <div className={clsx("w-screen h-screen snap-start bg-white relative z-[20]")}>
+      <div className="md:flex w-full h-full">
+        {/* Left side with scrollable sections */}
+        <div
+          className="md:w-[60%] h-screen overflow-auto snap-y snap-mandatory"
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
           <div className="pl-8 h-screen lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
             <Step1Info section1Ref={section1Ref} />
           </div>
@@ -47,13 +53,16 @@ const Step1Section = ({ section1Ref }: Step1SectionProp) => {
           <div className="h-screen snap-start">
             <ReadyToOrderSection />
           </div>
+          {/* Mobile-only form at bottom */}
           <div className="h-screen snap-start block md:hidden overflow-y-auto z-10 relative">
-            <div className="w-full select-none bg-white !mt-0 pl-8 lg:pl-[16.6%] min-h-full flex flex-col justify-between pr-8 text-black">
+            <div className="w-full bg-white mt-0 pl-8 lg:pl-[16.6%] min-h-full flex flex-col justify-between pr-8 text-black">
               <ContactUsForm />
             </div>
           </div>
         </div>
-        <div className="w-[40%] pr-8 lg:pr-[calc(10%)] bg-white pt-[45px] relative border border-black overflow-y-auto hidden md:block">
+
+        {/* Right fixed form for desktop */}
+        <div className="w-[40%] pr-8 lg:pr-[calc(10%)] bg-white pt-[45px] border border-black overflow-auto hidden md:block">
           <ContactUsForm />
         </div>
       </div>
