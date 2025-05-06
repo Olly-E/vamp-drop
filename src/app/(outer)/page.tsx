@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div
-      className="h-[100dvh] text-white w-full relative overflow-y-scroll snap-y snap-mandatory"
+      className="h-[100dvh] text-white w-full relative overflow-auto snap-y snap-mandatory"
       style={{ backgroundImage: "var(--color-vamp-gradient)" }}
     >
       <section className="max-w-[1141px] mx-auto pt-[109px] pb-10 h-[100dvh] snap-start">
