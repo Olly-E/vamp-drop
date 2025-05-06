@@ -30,9 +30,9 @@ const Step1Section = ({ section1Ref }: Step1SectionProp) => {
           className="md:w-[60%] h-[100dvh] overflow-auto snap-y snap-mandatory"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
-          <div className="pl-8 h-[100dvh] lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
+          {/* <div className="pl-8 h-[100dvh] lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
             <Step1Info section1Ref={section1Ref} />
-          </div>
+          </div> */}
           <div className="h-[100dvh] snap-start">
             <Step2Section />
           </div>
