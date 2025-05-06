@@ -19,42 +19,46 @@ interface Step1SectionProp {
 
 const Step1Section = ({ section1Ref }: Step1SectionProp) => {
   return (
-    <div className={clsx("w-screen h-screen snap-start bg-white relative z-[20]")}>
+    <div
+      className={clsx(
+        "w-screen h-[100dvh] snap-start bg-white relative z-[20]"
+      )}
+    >
       <div className="md:flex w-full h-full">
         {/* Left side with scrollable sections */}
         <div
-          className="md:w-[60%] h-screen overflow-auto snap-y snap-mandatory"
+          className="md:w-[60%] h-[100dvh] overflow-auto snap-y snap-mandatory"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
-          <div className="pl-8 h-screen lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
+          <div className="pl-8 h-[100dvh] lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
             <Step1Info section1Ref={section1Ref} />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <Step2Section />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <Step3Section />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <Step4Section />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <Step5Section />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <Step6Section />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <Step7Section />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <WhyChooseVampSec />
           </div>
-          <div className="h-screen snap-start">
+          <div className="h-[100dvh] snap-start">
             <ReadyToOrderSection />
           </div>
           {/* Mobile-only form at bottom */}
-          <div className="h-screen snap-start block md:hidden overflow-y-auto z-10 relative">
+          <div className="h-[100dvh] snap-start block md:hidden overflow-y-auto z-10 relative">
             <div className="w-full bg-white mt-0 pl-8 lg:pl-[16.6%] min-h-full flex flex-col justify-between pr-8 text-black">
               <ContactUsForm />
             </div>

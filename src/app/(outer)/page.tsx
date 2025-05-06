@@ -25,10 +25,10 @@ export default function Home() {
 
   return (
     <div
-      className="h-screen text-white w-full relative overflow-y-scroll snap-y snap-mandatory"
+      className="h-[100dvh] text-white w-full relative overflow-y-scroll snap-y snap-mandatory"
       style={{ backgroundImage: "var(--color-vamp-gradient)" }}
     >
-      <section className="max-w-[1141px] mx-auto pt-[109px] pb-10 h-screen snap-start">
+      <section className="max-w-[1141px] mx-auto pt-[109px] pb-10 h-[100dvh] snap-start">
         <div className="flex flex-col px-4 xs:px-[30px] xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">
           <div className="lg:w-[527px]">
             <p className="bg-black/5 text-black px-3 rounded py-1 text-[13px] w-fit font-medium">
@@ -50,7 +50,12 @@ export default function Home() {
                 className="flex items-center w-full mt-6 lg:justify-between"
               >
                 Explore Vamp Drop
-                <ChevronDown size={14} strokeWidth={2} color="#FFFFFF" className="hidden lg:block"/>
+                <ChevronDown
+                  size={14}
+                  strokeWidth={2}
+                  color="#FFFFFF"
+                  className="hidden lg:block"
+                />
               </Button>
               <Button
                 onClick={handleClickOnDropDownButton}

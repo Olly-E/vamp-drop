@@ -10,7 +10,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="h-screen">
+    <div className="h-[100dvh]">
       <Header />
       <div id="modal-root" />
       {children}

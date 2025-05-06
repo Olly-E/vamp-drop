@@ -1,11 +1,10 @@
 import React from "react";
 
-
 import { Button } from "./components/elements/Button";
 
 const NotFound = () => {
   return (
-    <div className="h-screen bg-black text-center !pt-20 text-white w-full">
+    <div className="h-[100dvh] bg-black text-center !pt-20 text-white w-full">
       <h1 className="font-normal text-[44px]">ERROR</h1>
       <div className="w-fit mx-auto relative">
         {/* <Image

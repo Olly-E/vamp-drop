@@ -1,34 +1,34 @@
-import React from 'react'
-import clsx from 'clsx'
+import React from "react";
+import clsx from "clsx";
 
 interface FullPageLoaderProps {
-  bgColor?: string
-  height?: string
-  className?: string
+  bgColor?: string;
+  height?: string;
+  className?: string;
 }
 
 export const FullPageLoader: React.FC<FullPageLoaderProps> = ({
-  bgColor = 'none',
-  height = 'h-screen',
-  className = '',
+  bgColor = "none",
+  height = "h-[100dvh]",
+  className = "",
 }) => {
   return (
     <div
       className={clsx(
-        'inset-0 flex items-center justify-center',
+        "inset-0 flex items-center justify-center",
         bgColor,
         height,
-        className,
+        className
       )}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         style={{
-          background: 'none',
-          display: 'block',
-          shapeRendering: 'auto',
-          margin: 'auto',
+          background: "none",
+          display: "block",
+          shapeRendering: "auto",
+          margin: "auto",
         }}
         width="80px"
         height="80px"
@@ -55,5 +55,5 @@ export const FullPageLoader: React.FC<FullPageLoaderProps> = ({
         </circle>
       </svg>
     </div>
-  )
-}
+  );
+};
