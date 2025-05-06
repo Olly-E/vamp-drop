@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
 
-import hero2mg from "../../../public/assets/hero2Img.webp";
+import hero2mg from "../../../../public/assets/hero2Img.webp";
 import naija from "../../../../public/assets/naija.svg";
 
 import { Button } from "../elements/Button";
@@ -22,8 +22,9 @@ const HomeSectionMobile = ({
   return (
     <div
       className={clsx(
-        "w-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px] min-h-full"
+        "w-full select-none !mt-0 pl-8 lg:pl-[16.6%] py-[45px] h-full overflow-hidden"
       )}
+      style={{ backgroundImage: "var(--color-vamp-gradient)" }}
     >
       {" "}
       <div className="flex flex-col px-4 xs:px-[30px] xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">

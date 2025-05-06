@@ -2,22 +2,29 @@
 import React from "react";
 import clsx from "clsx";
 
-import { ContactUsForm } from "../ContatcUsForm";
+import ReadyToOrderSection from "./ReadToOrderSection";
 import WhyChooseVampSec from "./WhyChooseVampSec";
-// import Step1Info from "../Step1Info";
+import { ContactUsForm } from "../ContatcUsForm";
 import Step2Section from "./Step2Section";
 import Step3Section from "./Step3Section";
 import Step4Section from "./Step4Section";
 import Step5Section from "./Step5Section";
 import Step6Section from "./Step6Section";
 import Step7Section from "./Step7Section";
-import ReadyToOrderSection from "./ReadToOrderSection";
+import Step1Info from "../Step1Info";
+import HomeSectionMobile from "./HomeSection";
 
 interface Step1SectionProp {
   section1Ref: React.RefObject<HTMLDivElement | null>;
+  handleOpenContactForm: () => void;
+  scrollToSection: (ref: React.RefObject<HTMLDivElement | null>) => void;
 }
 
-const Step1Section = ({}: Step1SectionProp) => {
+const Step1Section = ({
+  section1Ref,
+  scrollToSection,
+  handleOpenContactForm,
+}: Step1SectionProp) => {
   return (
     <div
       className={clsx(
@@ -30,9 +37,17 @@ const Step1Section = ({}: Step1SectionProp) => {
           className="md:w-[60%] h-[100dvh] overflow-auto snap-y snap-mandatory"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
-          {/* <div className="pl-8 h-[100dvh] lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
+          <div className="h-[100dvh] snap-start">
+            <HomeSectionMobile
+              handleOpenContactForm={handleOpenContactForm}
+              scrollToSection={scrollToSection}
+              section1Ref={section1Ref}
+            />
+          </div>
+
+          <div className="pl-8 h-[100dvh] lg:pl-[16.6%] snap-start bg-white pt-[45px] pr-8">
             <Step1Info section1Ref={section1Ref} />
-          </div> */}
+          </div>
           <div className="h-[100dvh] snap-start">
             <Step2Section />
           </div>

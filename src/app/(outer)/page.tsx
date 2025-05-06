@@ -28,7 +28,7 @@ export default function Home() {
       className="h-[100dvh] text-white w-full relative overflow-auto snap-y snap-mandatory"
       style={{ backgroundImage: "var(--color-vamp-gradient)" }}
     >
-      <section className="max-w-[1141px] overflow-hidden mx-auto pt-[109px] pb-10 h-[100dvh] snap-start">
+      <section className="max-w-[1141px] overflow-hidden mx-auto pt-[109px] pb-10 h-[100dvh] snap-start hidden md:block">
         <div className="flex flex-col px-4 xs:px-[30px] xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">
           <div className="lg:w-[527px]">
             <p className="bg-black/5 text-black px-3 rounded py-1 text-[13px] w-fit font-medium">
@@ -92,7 +92,11 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <Step1Section section1Ref={section1Ref} />
+      <Step1Section
+        section1Ref={section1Ref}
+        handleOpenContactForm={handleClickOnDropDownButton}
+        scrollToSection={scrollToSection}
+      />
       <MobileContactSection modalOpen={isComponentVisible} modalRef={ref} />
     </div>
   );

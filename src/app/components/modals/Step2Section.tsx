@@ -9,7 +9,7 @@ const Step2Section = () => {
   return (
     <div
       className={clsx(
-        "w-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px] min-h-full"
+        "w-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px] h-full"
       )}
     >
       <div className="pt-10 text-black  mb-20 h-full overflow-y-auto pr-8 lg:pr-20 ">
