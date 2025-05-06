@@ -27,7 +27,7 @@ const HomeSectionMobile = ({
       style={{ backgroundImage: "var(--color-vamp-gradient)" }}
     >
       {" "}
-      <div className="flex flex-col px-4 xs:px-[30px] xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">
+      <div className="flex flex-col pr-8 lg:pr-20 pt-10 xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">
         <div className="lg:w-[527px]">
           <p className="bg-black/5 text-black px-3 rounded py-1 text-[13px] w-fit font-medium">
             ORDER WITH EASE — WELCOME TO VAMP DROP

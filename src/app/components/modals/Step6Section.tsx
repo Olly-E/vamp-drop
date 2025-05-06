@@ -15,7 +15,7 @@ const Step6Section = () => {
     >
       <div className="pt-10 text-black pr-8 lg:pr-20">
         <p className="text-xs">STEP 6</p>
-        <div className="sm:w-[457px]">
+        <div className="lg:w-[457px]">
           <h2 className="uppercase font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
             Collect Your Order at Vamp in Lagos
           </h2>

@@ -12,7 +12,7 @@ const Step2Section = () => {
         "w-full select-none bg-[#F9F9E0] !mt-0 pl-8 lg:pl-[16.6%] py-[45px] h-full"
       )}
     >
-      <div className="pt-10 text-black  mb-20 h-full overflow-y-auto pr-8 lg:pr-20 ">
+      <div className=" text-black mb-20 h-full overflow-y-auto pr-8 lg:pr-20 pt-10">
         <p className="text-xs">STEP 2</p>
         <div className="flex flex-col xl:flex-row items-start xl:gap-10">
           <h2 className="uppercase flex-1 font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">

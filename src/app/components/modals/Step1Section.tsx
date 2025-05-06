@@ -37,7 +37,7 @@ const Step1Section = ({
           className="md:w-[60%] h-[100dvh] overflow-auto snap-y snap-mandatory"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
-          <div className="h-[100dvh] snap-start">
+          <div className="h-[100dvh] snap-start block md:hidden">
             <HomeSectionMobile
               handleOpenContactForm={handleOpenContactForm}
               scrollToSection={scrollToSection}
