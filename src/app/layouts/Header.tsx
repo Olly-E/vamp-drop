@@ -1,5 +1,4 @@
 import { Instagram } from "iconsax-react";
-import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -23,23 +22,23 @@ const Header = () => {
         <Link href="/" className="">
           <Image src={logo} alt="logo" className="" />
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <button
+            ref={dropDownButtonRef}
+            onClick={handleClickOnDropDownButton}
+            type="button"
+            className="inline md:hidden text-xs"
+          >
+            FORM
+          </button>
+          <Link href="/blog" className="text-xs">
+            BLOG
+          </Link>
           <Link href="/" className="">
             <Instagram size={18} color="#050505" />
           </Link>
           <Link href="/" className="">
             <Image src={x} alt="x-logo" className="w-[16px] h-auto" />
-          </Link>
-          <button
-            ref={dropDownButtonRef}
-            onClick={handleClickOnDropDownButton}
-            type="button"
-            className="inline md:hidden min-w-[18px]"
-          >
-            <Phone size={18} color="#000000" />
-          </button>
-          <Link href="/blog" className="text-sm">
-            BLOG
           </Link>
         </div>
       </div>

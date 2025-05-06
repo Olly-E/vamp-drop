@@ -1,7 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
 
-import Image from "next/image";
 
 import slide2Img from "../../../../public/assets/slide2Img.webp";
 

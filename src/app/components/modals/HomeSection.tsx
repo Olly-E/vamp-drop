@@ -2,12 +2,10 @@ import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
 
-import hero2mg from "../../../../public/assets/hero2Img.webp";
-import naija from "../../../../public/assets/naija.svg";
-
 import { Button } from "../elements/Button";
 import { ChevronDown } from "lucide-react";
-import { PERKS_DATA } from "@/app/utils/dummyData";
+
+import heroImg from "../../../../public/assets/heroImg.webp";
 
 interface HomeSectionMobileProp {
   scrollToSection: (ref: React.RefObject<HTMLDivElement | null>) => void;
@@ -22,14 +20,18 @@ const HomeSectionMobile = ({
   return (
     <div
       className={clsx(
-        "w-full select-none !mt-0 pl-8 lg:pl-[16.6%] py-[45px] h-full overflow-hidden"
+        "w-full select-none !mt-0 py-[45px] h-full overflow-hidden"
       )}
       style={{ backgroundImage: "var(--color-vamp-gradient)" }}
     >
-      {" "}
-      <div className="flex flex-col pr-8 lg:pr-20 pt-10 xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">
+      <Image
+        src={heroImg}
+        alt="hero-img"
+        className="max-w-[279.13px] mx-auto mt-6 lg:mx-0"
+      />
+      <div className="flex pl-8 lg:pl-[16.6%] flex-col pr-8 lg:pr-20 pt-4 xl:px-0 lg:gap-10 lg:flex-row items-start justify-between w-full">
         <div className="lg:w-[527px]">
-          <p className="bg-black/5 text-black px-3 rounded py-1 text-[13px] w-fit font-medium">
+          <p className="bg-black/5 text-black px-3 rounded py-1 text-[11px] sm:text-[13px] w-fit font-medium">
             ORDER WITH EASE — WELCOME TO VAMP DROP
           </p>
           <h1 className="text-[35px] sm:text-[50px] text-black leading-[107%] mt-5">
@@ -58,36 +60,12 @@ const HomeSectionMobile = ({
             <Button
               onClick={handleOpenContactForm}
               variant="outline"
-              className="flex lg:hidden items-center w-full mt-6 "
+              className="flex lg:hidden items-center w-full mt-6 !bg-white"
             >
               Fill Our Form
             </Button>
           </div>
-          <div className="flex items-center gap-2 mt-6 lg:mt-32">
-            <Image src={naija} alt="nigeria" />
-            <p className="text-black">Nigeria’s Trusted Delivery Service</p>
-          </div>
         </div>
-        <Image
-          src={hero2mg}
-          alt="hero-img"
-          className="sm:max-w-[541.1px] mx-auto mt-14 lg:mt-0 lg:mx-0"
-        />
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-stretch gap-4 -mt-10 px-4 xs:px-[30px] xl:px-0">
-        {PERKS_DATA?.map((card) => (
-          <div key={card.id} className={clsx("rounded-lg")}>
-            <div className=" bg-white text-primary py-6 px-6 rounded ">
-              <Image
-                src={card.icon}
-                alt="icon"
-                className="max-w-[24px] h-auto"
-              />
-              <p className="text-[20px] font-bold mt-4">{card.title}</p>
-              <p className="mt-3">{card.description}</p>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   );
