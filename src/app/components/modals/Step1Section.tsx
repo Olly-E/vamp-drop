@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 import { ContactUsForm } from "../ContatcUsForm";
 import WhyChooseVampSec from "./WhyChooseVampSec";
-import Step1Info from "../Step1Info";
+// import Step1Info from "../Step1Info";
 import Step2Section from "./Step2Section";
 import Step3Section from "./Step3Section";
 import Step4Section from "./Step4Section";
@@ -17,7 +17,7 @@ interface Step1SectionProp {
   section1Ref: React.RefObject<HTMLDivElement | null>;
 }
 
-const Step1Section = ({ section1Ref }: Step1SectionProp) => {
+const Step1Section = ({}: Step1SectionProp) => {
   return (
     <div
       className={clsx(
