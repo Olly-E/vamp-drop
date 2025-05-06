@@ -45,7 +45,7 @@ const Step1Info = ({ section1Ref }: Step1InfoProps) => {
               src={brand}
               key={index}
               alt="brand-accepted-logo"
-              className="h-[40px] sm:h-[40px] w-auto 2xl:w-auto 2xl:h-[auto]"
+              className="h-[30px] sm:h-[40px] w-auto 2xl:w-auto 2xl:h-[auto]"
             />
           );
         })}
