@@ -18,7 +18,7 @@ const Step2Section = () => {
           <h2 className="uppercase flex-1 font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
             Fill Out the Order Form
           </h2>
-          <p className="flex-1">
+          <p className="flex-1 mt-6">
             Use our simple order form to submit the details of your selected
             items. This helps us accurately calculate the total cost, including
             our 10% service fee.

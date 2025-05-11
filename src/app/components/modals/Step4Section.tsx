@@ -17,7 +17,7 @@ const Step4Section = () => {
           <h2 className=" uppercase font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
             MAKE PAYMENT
           </h2>
-          <p>
+          <p className="mt-6">
             Pay the total amount on the invoice to the Vamp account provided.
             After your payment is confirmed, we’ll handle the rest.
           </p>
@@ -25,7 +25,7 @@ const Step4Section = () => {
         <Image
           src={slide4Img}
           alt="slide-2-img"
-          className="sm:w-[50%] h-auto mt-10 max-h-[400px] lg:w-full object-cover"
+          className=" h-auto mt-10 lg:w-full object-cover"
         />
       </div>
     </div>

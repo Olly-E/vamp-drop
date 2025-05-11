@@ -17,7 +17,7 @@ const Step7Section = () => {
           <h2 className="uppercase font-[500] leading-[122%] text-[35px] sm:text-[50px] mt-3">
             OUR <br /> SERVICE FEE
           </h2>
-          <p>
+          <p className="mt-6">
             A 10% Vamp Drop service fee is applied to the total order cost
             (product price + any applicable delivery and VAT costs). This fee
             covers order processing, handling, and logistics to ensure your
@@ -27,7 +27,7 @@ const Step7Section = () => {
         <Image
           src={slide7Img}
           alt="slide-2-img"
-          className="sm:w-[50%] h-auto mt-10 max-h-[200px] lg:w-full object-cover"
+          className=" h-auto mt-10 lg:w-full object-cover"
         />
       </div>
     </div>
